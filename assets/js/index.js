@@ -1,10 +1,9 @@
-// archivo: index.js
+
 import { Leon } from "./Leon.js";
 import { Lobo } from "./Lobo.js";
 import { Oso } from "./Oso.js";
 import { Serpiente } from "./Serpiente.js";
 import { Aguila } from "./Aguila.js";
-import { Tigre } from "./Tigre.js";
 
 const animales = [];
 
@@ -59,15 +58,6 @@ document.getElementById("btnRegistrar").addEventListener("click", () => {
         "assets/imgs/Aguila.png",
         comentarios,
         "assets/sounds/Chillido.mp3"
-      );
-      break;
-    case "Tigre":
-      nuevoAnimal = new Tigre(
-        "Tigre",
-        edad,
-        "assets/imgs/lion.svg",
-        comentarios,
-        "assets/sounds/Tigre.mp3"
       );
       break;
     default:
